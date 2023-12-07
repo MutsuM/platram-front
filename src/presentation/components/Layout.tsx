@@ -14,9 +14,6 @@ const Layout = (props: Props) => {
 
             <div className="d-flex" id="wrapper">
                 <div className="text-white sidebar">
-                    <div className="sidebar-heading">
-                        <button className='btn btn-primary-upload'><i className='fa fa-plus'></i> Subir documento</button>
-                    </div>
                     <Sidebar />
                 </div>
 

@@ -18,7 +18,7 @@ const LoginView = () => {
             <div className="col-md-6 login-container" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <div className="container">
                     <div className="col-10 mx-auto">
-                        <div className="login-form">
+                        <div className="login-form shadow-sm">
                             <h2 className="text-login">Iniciar Sesión</h2>
                             <div className="form-group">
                                 <label className="text-size-15"><i className="fa fa-envelope" style={{color: '#9F9F9F'}}></i> Correo asociado</label>

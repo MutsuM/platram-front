@@ -16,7 +16,7 @@ const RoleView = () => {
                     <h5>Mi lista de usuarios</h5>
 
                     <div className="item-role">
-                        <div className="row pt-2">
+                        <div className="row pt-4 mb-2">
                             <div className="col-2">
                                 <i className='fa fa-user'></i> Rol 1
                             </div>
@@ -35,7 +35,7 @@ const RoleView = () => {
                     </div>
 
                     <div className="item-role">
-                        <div className="row pt-2">
+                        <div className="row pt-4 mb-2">
                             <div className="col-2">
                                 <i className='fa fa-user'></i> Rol 2
                             </div>
@@ -54,7 +54,7 @@ const RoleView = () => {
                     </div>
 
                     <div className="item-role">
-                        <div className="row pt-2">
+                        <div className="row pt-4 mb-2">
                             <div className="col-2">
                                 <i className='fa fa-user'></i> Rol 3
                             </div>

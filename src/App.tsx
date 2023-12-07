@@ -7,6 +7,8 @@ import MyAccountViewController from './presentation/modules/MyAccount/MyAccountV
 import UserViewController from './presentation/modules/Users/UserViewController';
 import RoleViewController from './presentation/modules/Roles/RoleViewController';
 import MyFilesViewController from './presentation/modules/MyFiles/MyFilesViewController';
+import UploadFileViewController from './presentation/modules/UploadFile/UploadFileViewController';
+import SinginViewController from './presentation/modules/Singin/SinginViewController';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/users" element={<UserViewController />} />
         <Route path="/roles" element={<RoleViewController />} />
         <Route path="/my-files" element={<MyFilesViewController />} />
+        <Route path="/upload" element={<UploadFileViewController />} />
+        <Route path="/sing-in" element={<SinginViewController />} />
       </Routes>
     </Router>
   );

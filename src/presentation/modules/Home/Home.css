@@ -1,0 +1,17 @@
+.btn-primary-entity {
+    background-color: #0F4CEC;
+    color: white;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.btn-primary-other-entity {
+    background-color: white;
+    color: #737373;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
