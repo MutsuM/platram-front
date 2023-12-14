@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg bg-platram">
             <a className="navbar-brand" href="/home">
                 <div className="desktop">
                     <img src="img/platram.png" alt="platram" />

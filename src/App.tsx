@@ -10,11 +10,13 @@ import MyFilesViewController from './presentation/modules/MyFiles/MyFilesViewCon
 import UploadFileViewController from './presentation/modules/UploadFile/UploadFileViewController';
 import SinginViewController from './presentation/modules/Singin/SinginViewController';
 
+import LandingViewController from './presentation/modules/Landing/LandingViewController';
+
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LoginViewController />} />
+        <Route path="/signin" element={<LoginViewController />} />
         <Route path="/home" element={<HomeViewController />} />
         <Route path="/my-account" element={<MyAccountViewController />} />
         <Route path="/users" element={<UserViewController />} />
@@ -22,6 +24,7 @@ function App() {
         <Route path="/my-files" element={<MyFilesViewController />} />
         <Route path="/upload" element={<UploadFileViewController />} />
         <Route path="/sing-in" element={<SinginViewController />} />
+        <Route path='/' element={<LandingViewController />} />
       </Routes>
     </Router>
   );

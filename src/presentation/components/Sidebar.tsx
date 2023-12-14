@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import { Home, File, User, UserPlus, Archive } from 'react-feather';
 
 const Sidebar = () => {
     return (
@@ -15,26 +16,44 @@ const Sidebar = () => {
                     <h3>Hola! Julian</h3>
                 </div>
 
-                <li className='sidebar-action'>
-                    <Link to={'/home'}><i className='fa fa-home'></i> <span>Principal</span></Link>
-                </li>
-                <li className='sidebar-action'>
-                    <Link to={'/my-files'}><i className='fa fa-th-large'></i> <span>Mis Archivos</span></Link>
-                </li>
+                <div style={{ marginBottom: '20px' }}>
+                    <NavLink to={'/home'} className={({ isActive }) => (isActive ? 'sidebar-action link-active' : 'sidebar-action')}>
+                        <Home style={{ height: '15px', marginTop: '-3px' }} />
+                        <span>{' '}Principal</span>
+                    </NavLink>
+                </div>
+
+                <div>
+                    <NavLink to={'/my-files'} className={({ isActive }) => (isActive ? 'sidebar-action link-active' : 'sidebar-action')}>
+                        <File style={{ height: '15px', marginTop: '-3px' }} />
+                        <span>{' '}Mis Archivos</span>
+                    </NavLink>
+                </div>
 
                 <div className='border-setting'>
                     <span className='text-settings'>CONFIGURACIÓN</span>
                 </div>
 
-                <li className='sidebar-action'>
-                    <Link to={'/my-account'}><i className='fa fa-user'></i> <span>Mi cuenta</span></Link>
-                </li>
-                <li className='sidebar-action'>
-                    <Link to={'/users'}><i className='fa fa-user-plus'></i> <span>Usuarios</span></Link>
-                </li>
-                <li className='sidebar-action'>
-                    <Link to={'/roles'}><i className='fa fa-user-circle'></i> <span>Roles</span></Link>
-                </li>
+                <div style={{ marginTop: '20px', marginBottom: '20px' }}>
+                    <NavLink to={'/my-account'} className={({ isActive }) => (isActive ? 'sidebar-action link-active' : 'sidebar-action')}>
+                        <User style={{ height: '15px', marginTop: '-3px' }} />
+                        <span>{' '}Mi cuenta</span>
+                    </NavLink>
+                </div>
+
+                <div style={{ marginBottom: '20px' }}>
+                    <NavLink to={'/users'} className={({ isActive }) => (isActive ? 'sidebar-action link-active' : 'sidebar-action')}>
+                        <UserPlus style={{ height: '15px', marginTop: '-3px' }} />
+                        <span>{' '}Usuarios</span>
+                    </NavLink>
+                </div>
+
+                <div style={{ marginBottom: '20px' }}>
+                    <NavLink to={'/roles'} className={({ isActive }) => (isActive ? 'sidebar-action link-active' : 'sidebar-action')}>
+                        <Archive style={{ height: '15px', marginTop: '-3px' }} />
+                        <span>{' '}Roles</span>
+                    </NavLink>
+                </div>
             </ul>
         </Fragment>
     );

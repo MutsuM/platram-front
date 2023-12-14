@@ -1,9 +1,12 @@
 .text-login {
-    font-size: 15px;
-    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
     padding-bottom: 10px;
-    border-bottom: 1px solid black;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+}
+
+.input-botton-login {
+    margin-bottom: 3rem;
 }
 
 .text-size-15 {
@@ -11,9 +14,22 @@
 }
 
 .btn-primary-platram {
-    background-color: #9F9F9F;
+    background-color: #202020;
     color: white;
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 25px;
+}
+
+.input-password-border-right-none {
+    border-right: none;
+}
+
+.input-password-border-none {
+    border: none !important;
+    border-top: 1px solid #ced4da !important;
+    border-right: 1px solid #ced4da !important;
+    border-bottom: 1px solid #ced4da !important;
+    background: white !important;
+    cursor: pointer;
 }
