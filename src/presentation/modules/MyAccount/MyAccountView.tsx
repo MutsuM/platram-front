@@ -7,22 +7,22 @@ const MyAccountView = () => {
         <div className='title-header'>
             <h2>Mi cuenta</h2>
 
-            <span>😊 Visualiza tu perfil y edita si lo deseas</span>
+            <span>Visualiza tu perfil y edita si lo deseas</span>
         </div>
-        <div className="col-lg-8 mx-auto">
+        <div className="col-lg-12">
             <div className="card card-body shadow-sm card-account">
-                <div className="col-lg-11 mx-auto">
+                <div className="col-lg-10 mx-auto">
                     <div className="row" style={{ marginTop: '25px' }}>
                         <div className="col-lg-6">
-                            <div className="">
-                                <label htmlFor=""><i className='fa fa-user'></i> Nombres</label>
+                            <div className="pt-2">
+                                <label htmlFor="">Nombres</label>
                                 <input type="text" className="form-control" />
                             </div>
                         </div>
 
                         <div className="col-lg-6">
-                            <div className="">
-                                <label htmlFor=""><i className='fa fa-user'></i> Apellidos</label>
+                            <div className="pt-2">
+                                <label htmlFor="">Apellidos</label>
                                 <input type="text" className="form-control" />
                             </div>
                         </div>
@@ -30,15 +30,15 @@ const MyAccountView = () => {
 
                     <div className="row pt-3" style={{ marginTop: '25px' }}>
                         <div className="col-lg-6">
-                            <div className="">
-                                <label htmlFor=""><i className='fa fa-building'></i> Entidad</label>
+                            <div className="pt-2">
+                                <label htmlFor="">Entidad</label>
                                 <input type="text" className="form-control" />
                             </div>
                         </div>
 
                         <div className="col-lg-6">
-                            <div className="">
-                                <label htmlFor=""><i className='fa fa-mobile'></i> Teléfono o celular</label>
+                            <div className="pt-2">
+                                <label htmlFor="">Celular</label>
                                 <input type="text" className="form-control" />
                             </div>
                         </div>
@@ -46,17 +46,17 @@ const MyAccountView = () => {
 
                     <div className="row pt-3" style={{ marginTop: '25px', marginBottom: '25px' }}>
                         <div className="col-lg-6">
-                            <div className="">
-                                <label htmlFor=""><i className='fa fa-envelope'></i> Correo Institucional</label>
+                            <div className="pt-2">
+                                <label htmlFor="">Correo Institucional</label>
                                 <input type="text" className="form-control" />
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="col-lg-7 pt-4 mx-auto">
+                <div className="col-lg-3 pt-4 mx-auto">
                     <button type="submit" className="btn btn-primary-platram btn-block">
-                        <i className='fa fa-check'></i> Actualizar datos
+                        Actualizar datos
                     </button>
                 </div>
             </div>

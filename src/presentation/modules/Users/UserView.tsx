@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import './User.css';
+import { User, Briefcase, Smartphone, Mail } from 'react-feather';
 
 const UserView = () => {
     return <Layout>
@@ -10,84 +11,158 @@ const UserView = () => {
         </div>
 
         <div className='row pt-4'>
-            <div className="col-lg-7 list-users">
-                <div className="btn btn-danger">
+            <div className="col-lg-12">
+                <div className="btn btn-primary-color">
                     Ver usuarios
                 </div>
 
-                <div className="btn btn-outline-danger ml-4">
+                <div className="btn btn-primary-outline-color ml-4">
                     Pendientes de aprobación
                 </div>
 
                 <div className="col-lg-12 pt-4">
                     <div className="card card-body shadow">
-                        <h5>Mi lista de usuarios</h5>
+                        <h5 style={{marginLeft: '15px'}}>Lista de usuarios</h5>
 
-                        <div className="item-user pt-2">
-                            <div className="row pt-2">
-                                <div className="col-lg-6">
-                                    <i className='fa fa-user'></i> Jesús Miguel Oliarte Paz
+                        <div className="row pt-4">
+                            <div className="col-lg-6 list-users">
+                                <div className="item-user pt-4">
+                                    <div className="col-lg-12">
+                                        <div className="row pt-2">
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <User style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    Jesús Miguel Oliarte Paz
+                                                </span>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Briefcase style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    SENASA
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="row pt-3">
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Smartphone style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    999 888 777
+                                                </span>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Mail style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    jesusoliarte@digesa.pe
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="col-lg-6">
-                                    <i className='fa fa-building'></i> SENASA
+
+                                <div className="item-user pt-4">
+                                    <div className="col-lg-12">
+                                        <div className="row pt-2">
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <User style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    Jesús Miguel Oliarte Paz
+                                                </span>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Briefcase style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    SENASA
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="row pt-3">
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Smartphone style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    999 888 777
+                                                </span>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Mail style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    jesusoliarte@digesa.pe
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="row pt-2">
-                                <div className="col-lg-6">
-                                    <i className='fa fa-mobile'></i> 999 888 777
+
+                            <div className="col-lg-6">
+                                <div className="item-user pt-4">
+                                    <div className="col-lg-12">
+                                        <div className="row pt-2">
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <User style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    Jesús Miguel Oliarte Paz
+                                                </span>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Briefcase style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    SENASA
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="row pt-3">
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Smartphone style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    999 888 777
+                                                </span>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Mail style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    jesusoliarte@digesa.pe
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="col-lg-6">
-                                    <i className='fa fa-envelope'></i> jesusoliarte@digesa.pe
+
+                                <div className="item-user pt-4">
+                                    <div className="col-lg-12">
+                                        <div className="row pt-2">
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <User style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    Jesús Miguel Oliarte Paz
+                                                </span>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Briefcase style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    SENASA
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="row pt-3">
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Smartphone style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    999 888 777
+                                                </span>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <span className='text-color-user'>
+                                                    <Mail style={{ marginTop: '-6px', marginRight: '10px' }} />
+                                                    jesusoliarte@digesa.pe
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="item-user">
-                            <div className="row pt-4">
-                                <div className="col-lg-6">
-                                    <i className='fa fa-user'></i> Jesús Miguel Oliarte Paz
-                                </div>
-                                <div className="col-lg-6">
-                                    <i className='fa fa-building'></i> SENASA
-                                </div>
-                            </div>
-                            <div className="row pt-2">
-                                <div className="col-lg-6">
-                                    <i className='fa fa-mobile'></i> 999 888 777
-                                </div>
-                                <div className="col-lg-6">
-                                    <i className='fa fa-envelope'></i> jesusoliarte@digesa.pe
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="item-user">
-                            <div className="row pt-4">
-                                <div className="col-lg-6">
-                                    <i className='fa fa-user'></i> Jesús Miguel Oliarte Paz
-                                </div>
-                                <div className="col-lg-6">
-                                    <i className='fa fa-building'></i> SENASA
-                                </div>
-                            </div>
-                            <div className="row pt-2">
-                                <div className="col-lg-6">
-                                    <i className='fa fa-mobile'></i> 999 888 777
-                                </div>
-                                <div className="col-lg-6">
-                                    <i className='fa fa-envelope'></i> jesusoliarte@digesa.pe
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <div className="col-lg-5">
-                <div style={{ marginLeft: '40px', marginTop: '20px' }}>
-                    <button className='btn btn-danger' data-toggle="modal" data-target="#exampleModal">
-                        <i className='fa fa-plus'></i>
-                        {' '}Agregar usuarios
-                    </button>
                 </div>
             </div>
         </div>

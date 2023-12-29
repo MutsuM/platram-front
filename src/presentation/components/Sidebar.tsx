@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Home, File, User, UserPlus, Archive } from 'react-feather';
+import { Home, File, User, UserPlus, Archive, Upload } from 'react-feather';
 
 const Sidebar = () => {
     return (
         <Fragment>
             <div className="sidebar-heading">
                 <Link to={'/upload'} className='btn btn-primary-upload'>
-                    <i className='fa fa-plus'></i> Subir documento
+                    <Upload /> Subir documento
                 </Link>
             </div>
             <ul className="list-unstyled">

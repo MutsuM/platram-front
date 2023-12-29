@@ -93,8 +93,8 @@ body{
   color: white !important;
   border-radius: 10px !important;
   width: 100% !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
   font-size: 13px !important;
 }
 
@@ -225,6 +225,11 @@ select.form-control:focus {
   margin-bottom: 20px;
 }
 
+.sidebar-action {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #606973 !important; /* Mantiene el color del texto original */
+}
+
 .link-active {
   background-color: white;
   padding-right: 100px;
@@ -232,14 +237,33 @@ select.form-control:focus {
   padding-bottom: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-}
-
-a:hover {
-  text-decoration: none !important;
-  color: inherit;
+  color: black !important;
 }
 
 .link-active {
   font-weight: bold;
   font-size: 13px !important;
+}
+
+.btn-primary-color {
+  background-color: #90743E !important;
+  color: white;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.btn-primary-outline-color {
+  background-color: white !important;
+  color: black;
+  border: 1px solid #90743E;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
