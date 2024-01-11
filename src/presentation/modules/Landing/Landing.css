@@ -3,112 +3,208 @@ body {
     margin: 0;
 }
 
-.navbar {
-    background-color: transparent;
-    transition: background-color 0.5s ease-in-out;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+.font-bold {
+    font-weight: bold !important;
 }
 
-.navbar-brand {
-    color: #fff;
-    font-weight: bold;
+.web {
+    .navbar {
+        background-color: transparent;
+        transition: background-color 0.5s ease-in-out;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navbar-brand {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .navbar-nav {
+        text-align: right;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+    .landing {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+
+    .landing-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../../../../public/img/background-landing-platram.png');
+        background-size: cover;
+        background-position: center;
+        filter: brightness(20%);
+        /* Ajusta el filtro de opacidad */
+    }
+
+    .landing-logo {
+        width: 18rem;
+        padding-bottom: 2.4rem;
+    }
+
+    .landing-content {
+        position: relative;
+        z-index: 1;
+        padding: 20px;
+        border-radius: 8px;
+        /* Ajusta la opacidad del contenido */
+    }
+
+    .landing-title {
+        font-size: 39px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .landing-subtitle {
+        padding-top: 10px;
+        font-size: 19px;
+        text-align: left;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .landing-image-content {
+        width: 42rem;
+    }
+
+    .display-flex-content-center {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .btn-white {
+        background-color: white;
+        color: black;
+        border-radius: 30px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .line-navbar-li {
+        border-right: 1px solid;
+        padding-right: 20px;
+    }
+
+    .top-10 {
+        margin-top: 10px;
+    }
+
+    .icon-size {
+        height: 20px;
+    }
+
+    .col-lg-10-5 {
+        -ms-flex: 0 0 91.666667%;
+        flex: 0 0 91.666667%;
+        max-width: 86.666667%
+    }
+
+    .top-lading-content-right {
+        top: 50px;
+    }
 }
 
-.navbar-nav {
-    text-align: right;
-}
+@media only screen and (max-width: 767px) {
 
-.navbar-nav .nav-item {
-    margin-left: 20px;
-}
+    .web {
+        display: none;
+    }
 
-.navbar-nav .nav-link {
-    color: #fff;
-}
+    * {
+        background-color: #040909;
+    }
 
-.landing {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
+    .movil {
+        background-color: #040909;
 
-.landing-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../../../../public/img/Portada.png');
-    background-size: cover;
-    background-position: center;
-    filter: brightness(20%);
-    /* Ajusta el filtro de opacidad */
-}
+        .landing-logo {
+            width: 185px;
+        }
 
-.landing-logo {
-    width: 12rem;
-    padding-bottom: 4rem;
-}
+        .bg-dark-platram {
+            background-color: #040909;
+        }
 
-.landing-content {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-    border-radius: 8px;
-    /* Ajusta la opacidad del contenido */
-}
+        li {
+            list-style-type: none;
+        }
 
-.landing-title {
-    font-size: 36px;
-    text-align: left;
-}
+        .btn-white {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-weight: 600;
+            width: 100%;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
-.landing-subtitle {
-    padding-top: 10px;
-    font-size: 16px;
-    text-align: left;
-}
+        .nav--icons {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
 
-.landing-image-content {
-    width: 40rem;
-}
+        .navbar-text-bottom {
+            padding-top: 7px;
+            display: block;
+            font-size: 12px;
+            background-color: white;
+            font-weight: bold;
+        }
 
-.display-flex-content-center {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
+        .border-top-left-navbar {
+            background: white;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            border-top-left-radius: 45px;
+            color: #606973;
+            font-weight: bold;
+        }
 
-.btn-white {
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 600;
-}
+        .border-center-navbar {
+            background: white;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            color: #606973;
+            font-weight: bold;
+        }
 
-.line-navbar-li {
-    border-right: 1px solid;
-    padding-right: 20px;
-}
-
-.top-10 {
-    margin-top: 10px;
-}
-
-.icon-size {
-    height: 20px;
-}
-
-.col-lg-10-5 {
-    -ms-flex:0 0 91.666667%;
-    flex:0 0 91.666667%;
-    max-width:86.666667%
+        .border-top-right-navbar {
+            background: white;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            border-top-right-radius: 45px;
+            color: #606973;
+            font-weight: bold;
+        }
+    }
 }
