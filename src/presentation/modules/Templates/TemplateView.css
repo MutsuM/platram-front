@@ -1,0 +1,75 @@
+.navbar-bg-platram {
+    background-color: #EDEBD4 !important;
+}
+
+.navbar-brand-register {
+    color: black !important;
+    font-weight: bold;
+}
+
+.navbar-bg-platram {
+    padding-bottom: 20px;
+}
+
+.content-body {
+    padding-top: 150px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.btn-tabs {
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: 1px solid #90743E;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: black;
+    font-weight: bold;
+    cursor: pointer;
+
+    &.active {
+        background-color: #90743E !important;
+        color: white;
+    }
+}
+
+.margin-bottom-img {
+    margin-bottom: 15px;
+}
+
+.card-spacing-padding {
+    margin-top: 50px;
+}
+
+.card-border {
+    border-radius: 15px;
+}
+
+.card-collapse {
+    border: 1px solid;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.margin-language-register {
+    padding-top: 5rem;
+    background-color: #EDEBD4;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+.movil {
+    .btn-dark-platram {
+        background-color: #202020;
+        color: white;
+        border-radius: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: bold;
+        width: 100%;
+        font-size: 13px;
+    }
+}

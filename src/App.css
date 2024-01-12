@@ -285,3 +285,26 @@ select.form-control:focus {
   justify-content: center;
   align-items: center;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-dark-platram {
+  background-color: #202020 !important;
+  color: white !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-primary-platform {
+  background: #F6F8F9 !important;
+}
+
+.body-content-templates {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

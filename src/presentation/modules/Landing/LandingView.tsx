@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import './Landing.css';
-import { User,HelpCircle, FileText, File } from 'react-feather';
+import { User, HelpCircle, FileText, File } from 'react-feather';
 import { Link } from 'react-router-dom';
 
 const LandingView = () => {
@@ -26,41 +26,45 @@ const LandingView = () => {
 
             <div className="landing">
                 <div className="landing-background"></div>
-                <div className="col-lg-10 mx-auto">
+                <div className="col-lg-11 mx-auto">
                     <div className="landing-content">
                         <div className="row">
-                            <div className="col-lg-6">
-                                <div className="col-lg-12">
-                                    <img src="img/logo-platram.svg" alt="platram.png" className="landing-logo" />
-                                    <div>
-                                        <h1 className="landing-title">Plataforma interoperable para la vigilancia integrada de Resistencia de los Antimicrobianos.</h1>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-12">
-                                    <div className="row">
-                                        <div className="col-lg-4" style={{ marginTop: '25px', marginBottom: '25px' }}>
-                                            <button className="btn btn-white">Descargar plantillas</button>
-                                        </div>
-
-                                        <div className="col-lg-4" style={{ marginTop: '25px', marginBottom: '25px' }}>
-                                            <button className="btn btn-white">Manual de usuario</button>
-                                        </div>
-
-                                        <div className="col-lg-4" style={{ marginTop: '25px', marginBottom: '25px' }}>
-                                            <button className="btn btn-white">Preguntas frecuentes</button>
+                            <div className="col-lg-6 display-flex-center">
+                                <section>
+                                    <div className="col-lg-12 pt-4">
+                                        <img src="img/logo-platram.svg" alt="platram.png" className="landing-logo" />
+                                        <div>
+                                            <h1 className="landing-title">Plataforma interoperable para la vigilancia integrada de Resistencia de los Antimicrobianos.</h1>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div className="col-lg-12">
-                                    <h1 className="landing-subtitle">
-                                        Este desarrollo ha sido realizado dentro del Proyecto UNJP/PER/060/UNJ: “RAM-MPTF: Lucha contra la resistencia a los antimicrobianos en Perú bajo el enfoque de Una salud, financiado por el Fondo Fiduciario de Asociados Múltiples (MPTF).
-                                    </h1>
-                                </div>
+                                    <div className="col-lg-12 pt-4">
+                                        <h1 className="landing-subtitle">
+                                            Este desarrollo ha sido realizado dentro del Proyecto UNJP/PER/060/UNJ: “RAM-MPTF: Lucha contra la resistencia a los antimicrobianos en Perú bajo el enfoque de Una salud, financiado por el Fondo Fiduciario de Asociados Múltiples (MPTF).
+                                        </h1>
+                                    </div>
+
+                                    <div className="col-lg-12 pt-4">
+                                        <div className="row">
+                                            <div className="col-lg-4" style={{ marginTop: '25px', marginBottom: '25px' }}>
+                                                <Link to={'/download-templates'} className="btn btn-white">Descargar plantillas</Link>
+                                            </div>
+
+                                            <div className="col-lg-4" style={{ marginTop: '25px', marginBottom: '25px' }}>
+                                                <Link to={'/user-manual'} className="btn btn-white">Manual de usuario</Link>
+                                            </div>
+
+                                            <div className="col-lg-4" style={{ marginTop: '25px', marginBottom: '25px' }}>
+                                                <Link to={'/frequent-questions'} className="btn btn-white">Preguntas frecuentes</Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
-                            <div className="col-lg-5 text-center top-lading-content-right">
-                                <img src="img/home-platram.svg" alt="" className="landing-image-content" />
+                            <div className="col-lg-6 text-center top-lading-content-right display-flex-center">
+                                <div>
+                                    <img src="img/Landing-image.png" alt="" className="landing-image-content" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -101,23 +105,25 @@ const LandingView = () => {
                 </div>
             </div>
             <div className="wrapper">
-                        <nav className="nav nav--icons">
-                            <div className="row" style={{ width: '100%', marginLeft: 0, marginRight: 0 }}>
-                                <div className="col-4 text-center border-top-left-navbar">
-                                    <FileText size={25} style={{ background: 'white' }} />
-                                    <span className="navbar-text-bottom font-bold">Descargar <br /> plantillas</span>
-                                </div>
-                                <div className="col-4 text-center border-center-navbar">
-                                    <File size={25} style={{ background: 'white' }} />
-                                    <span className="navbar-text-bottom">Manual de <br /> usuario</span>
-                                </div>
-                                <div className="col-4 text-center border-top-right-navbar">
-                                    <HelpCircle size={25} style={{ background: 'white' }} />
-                                    <span className="navbar-text-bottom">Preguntas</span>
-                                </div>
-                            </div>
-                        </nav>
+                <nav className="nav nav--icons">
+                    <div className="row" style={{ width: '100%', marginLeft: 0, marginRight: 0 }}>
+                        <div className="col-4 text-center border-top-left-navbar">
+                            <Link to={'/'}>
+                                <FileText size={25} style={{ background: 'white' }} />
+                                <span className="navbar-text-bottom font-bold">Descargar <br /> plantillas</span>
+                            </Link>
+                        </div>
+                        <div className="col-4 text-center border-center-navbar">
+                            <File size={25} style={{ background: 'white' }} />
+                            <span className="navbar-text-bottom">Manual de <br /> usuario</span>
+                        </div>
+                        <div className="col-4 text-center border-top-right-navbar">
+                            <HelpCircle size={25} style={{ background: 'white' }} />
+                            <span className="navbar-text-bottom">Preguntas</span>
+                        </div>
                     </div>
+                </nav>
+            </div>
         </div>
     </Fragment>
 };

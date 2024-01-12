@@ -11,6 +11,7 @@ import UploadFileViewController from './presentation/modules/UploadFile/UploadFi
 import SinginViewController from './presentation/modules/Singin/SinginViewController';
 
 import LandingViewController from './presentation/modules/Landing/LandingViewController';
+import TemplateViewController from './presentation/modules/Templates/TemplateViewController';
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
         <Route path="/my-files" element={<MyFilesViewController />} />
         <Route path="/upload" element={<UploadFileViewController />} />
         <Route path="/sing-in" element={<SinginViewController />} />
+
         <Route path='/' element={<LandingViewController />} />
+        <Route path='/download-templates' element={<TemplateViewController />} />
       </Routes>
     </Router>
   );
