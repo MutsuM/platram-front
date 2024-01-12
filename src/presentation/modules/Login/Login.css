@@ -18,7 +18,7 @@
     color: white;
     padding-top: 12px;
     padding-bottom: 12px;
-    border-radius: 25px;
+    border-radius: 8px;
 }
 
 .input-password-border-right-none {
@@ -32,4 +32,50 @@
     border-bottom: 1px solid #ced4da !important;
     background: white !important;
     cursor: pointer;
+}
+
+.navbar-movil {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .navbar-movil {
+        display: block;
+    }
+
+    .movil-no-container {
+        padding: 0;
+    }
+
+    .movil-padding-login {
+        padding-top: 90px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .text-center-movil {
+        text-align: center !important;
+    }
+
+    .text-end-movil {
+        text-align: end !important;
+    }
+
+    .text-bold-movil {
+        font-weight: bold;
+    }
+
+    .logo-navbar-image {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar-border {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
 }

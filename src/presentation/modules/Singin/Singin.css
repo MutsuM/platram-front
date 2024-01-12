@@ -1,0 +1,49 @@
+.navbar-movil {
+    display: none;
+}
+
+.text-color-politics {
+    color: #A28B48;
+}
+
+@media only screen and (max-width: 767px) {
+    .desktop {
+        display: none !important;
+    }
+
+    .navbar-movil {
+        display: block;
+    }
+
+    .movil-no-container {
+        padding: 0;
+    }
+
+    .movil-padding-register {
+        padding-top: 20px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .text-center-movil {
+        text-align: center !important;
+    }
+
+    .text-end-movil {
+        text-align: end !important;
+    }
+
+    .text-bold-movil {
+        font-weight: bold;
+    }
+
+    .logo-navbar-image {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar-border {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+}

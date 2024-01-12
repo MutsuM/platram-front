@@ -6,8 +6,11 @@ import { ArrowRight } from 'react-feather';
 const LoginView = () => {
     return <div className="container-fluid">
         <div className="row">
-            <div className="col-md-6 login-image" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <div >
+            <nav className="navbar-movil navbar navbar-light bg-dark-platram navbar-border" style={{width: '100%'}}>
+                <img src="img/landing-logo.png" alt="landing-logo.png" width={'150px'} className="logo-navbar-image" />
+            </nav>
+            <div className="col-md-6 login-image desktop display-flex-center">
+                <div>
                     <div className="text-center">
                         <img src="img/logo-login.png" style={{ width: '40%' }} />
                     </div>
@@ -16,11 +19,11 @@ const LoginView = () => {
                     </div>
                 </div>
             </div>
-            <div className="col-md-6 login-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <div className="container">
-                    <div className="col-7 mx-auto">
+            <div className="col-md-6 movil-padding-login login-container display-flex-center display-flex-center">
+                <div className="container movil-no-container">
+                    <div className="col-lg-7 mx-auto">
                         <div className="login-form">
-                            <h2 className="text-login">Iniciar Sesión</h2>
+                            <h2 className="text-login text-center-movil text-bold-movil">Iniciar Sesión</h2>
                             <div className="form-group input-botton-login">
                                 <input type="text" className="form-control" placeholder="Correo electrónico" />
                             </div>
@@ -38,8 +41,8 @@ const LoginView = () => {
                             </button>
                             <br />
                             <hr />
-                            <div>
-                                <span>¿No tienes una cuenta? <Link to={'/sing-in'}>Regístrate</Link></span>
+                            <div className="text-end-movil">
+                                <span className="text-bold-movil">¿No tienes una cuenta? <Link to={'/sing-in'}>Regístrate</Link></span>
                             </div>
                         </div>
                     </div>

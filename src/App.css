@@ -267,3 +267,21 @@ select.form-control:focus {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+.text-bold {
+  font-weight: bold !important;
+}
+
+.text-no-link {
+  text-decoration: none !important;
+}
+
+.bg-dark-platram {
+  background-color: #202020;
+}
+
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
