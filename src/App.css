@@ -308,3 +308,7 @@ select.form-control:focus {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+a:hover {
+  text-decoration: none !important;
+}

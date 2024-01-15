@@ -108,18 +108,22 @@ const LandingView = () => {
                 <nav className="nav nav--icons">
                     <div className="row" style={{ width: '100%', marginLeft: 0, marginRight: 0 }}>
                         <div className="col-4 text-center border-top-left-navbar">
-                            <Link to={'/'}>
+                            <Link to={'/download-templates'}>
                                 <FileText size={25} style={{ background: 'white' }} />
                                 <span className="navbar-text-bottom font-bold">Descargar <br /> plantillas</span>
                             </Link>
                         </div>
                         <div className="col-4 text-center border-center-navbar">
-                            <File size={25} style={{ background: 'white' }} />
-                            <span className="navbar-text-bottom">Manual de <br /> usuario</span>
+                            <Link to={'/download-templates'}>
+                                <File size={25} style={{ background: 'white' }} />
+                                <span className="navbar-text-bottom">Manual de <br /> usuario</span>
+                            </Link>
                         </div>
                         <div className="col-4 text-center border-top-right-navbar">
-                            <HelpCircle size={25} style={{ background: 'white' }} />
-                            <span className="navbar-text-bottom">Preguntas</span>
+                            <Link to={'/download-templates'}>
+                                <HelpCircle size={25} style={{ background: 'white' }} />
+                                <span className="navbar-text-bottom">Preguntas</span>
+                            </Link>
                         </div>
                     </div>
                 </nav>
