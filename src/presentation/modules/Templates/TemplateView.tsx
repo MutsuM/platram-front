@@ -393,6 +393,100 @@ const TemplateView = (props: Props) => {
                     </div>
                 </section>}
 
+                {numberTab === 3 && <section>
+                    <div className="row pt-4">
+                        <div className="col-lg-7 pt-4">
+                            <section className="col-lg-11 mx-auto">
+                                <h2 className="font-bold">Preguntas frecuentes</h2>
+                                <br />
+
+                                <div className="card-collapse">
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <span className="font-bold">¿Qué es PlatRAM?</span>
+                                            {openCollapse && <section className="pt-2">
+                                                <span>
+                                                    Plataforma interoperable piloto para la vigilancia integrada de la Resistencia a los Antimicrobianos (RAM) y el Uso de Antimicrobianos (UAM) en Perú.
+                                                </span>
+                                            </section>}
+                                        </div>
+                                        <div className="col-1">
+                                            {!openCollapse && <ChevronDown className="cursor-pointer" onClick={() => setOpenCollapse(!openCollapse)} />}
+                                            {openCollapse && <ChevronUp className="cursor-pointer" onClick={() => setOpenCollapse(!openCollapse)} />}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card-collapse mt-4">
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <span className="font-bold">¿Qué es un antimicrobiano?</span>
+                                        </div>
+                                        <div className="col-1">
+                                            <ChevronDown className="cursor-pointer" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card-collapse mt-4">
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <span className="font-bold">¿Qué es UAM?</span>
+                                        </div>
+                                        <div className="col-1">
+                                            <ChevronDown className="cursor-pointer" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card-collapse mt-4">
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <span className="font-bold">¿Qué es RAM?</span>
+                                        </div>
+                                        <div className="col-1">
+                                            <ChevronDown className="cursor-pointer" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card-collapse mt-4">
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <span className="font-bold">¿QuIénes pueden ver los indicadores?</span>
+                                        </div>
+                                        <div className="col-1">
+                                            <ChevronDown className="cursor-pointer" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card-collapse mt-4">
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <span className="font-bold">¿Cómo accedo a cargar datos al sistema?</span>
+                                        </div>
+                                        <div className="col-1">
+                                            <ChevronDown className="cursor-pointer" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="card-collapse mt-4">
+                                    <div className="row">
+                                        <div className="col-10">
+                                            <span className="font-bold">¿Los datos son seguros?</span>
+                                        </div>
+                                        <div className="col-1">
+                                            <ChevronDown className="cursor-pointer" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </section>}
+
                 <br /><br /><br /><br />
             </div>
 
